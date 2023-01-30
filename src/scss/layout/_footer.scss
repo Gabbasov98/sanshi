@@ -1,0 +1,43 @@
+.footer{
+  position: relative;
+  z-index: 2;
+  padding: 10px 0 65px;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__link{
+    font-size: 20px;
+    line-height: 23px;
+  }
+  &__c{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .footer{
+    padding: 0 0 50px;
+    &__c{
+      padding: 0 15px;
+      display: block;
+      font-size: 13px;
+      line-height: 15px;
+      position: relative;
+      margin-top: 45px;
+      &-icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 14px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

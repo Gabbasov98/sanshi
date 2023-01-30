@@ -1,0 +1,41 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 40px 0;
+  &__logo{
+    display: block;
+    width: 280px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__close{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .header{
+    padding: 52px 0;
+    &__inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo{
+      width: 144px;
+    }
+    &__close{
+      z-index: 5;
+      display: flex;
+      img{
+        width: 42px;
+      }
+    }
+  }
+}

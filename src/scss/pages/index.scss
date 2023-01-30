@@ -1,0 +1,153 @@
+.wallet{
+  padding: 300px 0 50px;
+  &__inner{
+    border-radius: 15px;
+    background-color: $black;
+    width: 392px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 32px 38px 38px;
+    color: #FFFFFF;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    img{
+      flex-shrink: 0;
+      width: 19px;
+      margin-right: 5px;
+    }
+  }
+  &__condition,
+  &__prices,
+  &__hint{
+    &-hint{
+      font-size: 15px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+    }
+    &-icon{
+      width: 15px;
+      flex-shrink: 0;
+      margin-right: 5px;
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &__prices{
+    margin-top: 44px;
+    padding: 16px;
+    background: #303030;
+    border-radius: 5px;
+    min-height: 110px;
+    &-num{
+      font-size: 50px;
+      line-height: 57px;
+      text-align: center;
+    }
+    &-hint{
+      color: #FF5454;
+      margin-top: 3px;
+      justify-content: center;
+    }
+
+  }
+  &__btn{
+    width: 100%;
+    height: 43px;
+    background: #FF4686;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 29px;
+    &:hover{
+      background: darken(#FF4686,10%);
+      color: #fff;
+    }
+  }
+  &__condition{
+    margin-top: 20px;
+    padding: 14px;
+    background: #303030;
+    border-radius: 5px;
+    &-list{
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 120%;
+      li{
+        line-height: inherit;
+      }
+    }
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  &__buttons{
+    display: flex;
+    align-items: center;
+  }
+  &__btn2,
+  &__btn3{
+    margin-right: 10px;
+    padding: 0 8px;
+    height: 32px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  &__btn2{
+    background: #715AFF;
+    &:hover{
+      background: darken(#715AFF,10%);
+      color: #fff;
+    }
+  }
+  &__btn3{
+    background: #FF5C00;
+    &:hover{
+      background: darken(#FF5C00,10%);
+      color: #fff;
+    }
+  }
+  &__hint{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    &:hover{
+      color: #fff;
+      span{
+        text-decoration: none;
+      }
+    }
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .wallet{
+    padding: 180px 0 40px;
+    &__inner{
+      width: 100%;
+      padding: 32px 13px 38px;
+    }
+    &__close{
+      display: none;
+    }
+  }
+}

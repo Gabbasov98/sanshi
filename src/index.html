@@ -1,0 +1,23 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html',{"close":""})
+        </header>
+        <main class="content">
+
+            <section class="wallet">
+                @@include('components/page-blocks/_wallet.html',{"close":"","price":"5.000","error":"","btn":"mint"})
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

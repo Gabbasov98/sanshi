@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="wallet__inner">
+        <div class="wallet__top">
+            <div class="wallet__title">
+                <img src="img/card.svg" alt="">
+                <span>your wallet:0x2cbB...711</span>
+            </div>
+            @@if(close !== ""){
+            <button class="wallet__close">
+                <img src="img/close.svg" alt="">
+            </button>}
+        </div>
+        <div class="wallet__prices">
+            <div class="wallet__prices-num">
+                @@price
+            </div>
+            @@if(error !== ""){
+            <div class="wallet__prices-hint">
+                <span class="wallet__prices-icon">
+                    <img src="img/warning.svg" alt="">
+                </span>
+                <span>@@error</span>
+            </div>}
+        </div>
+        <button class="wallet__btn m-btn">
+            @@btn
+        </button>
+        <div class="wallet__condition">
+            <div class="wallet__condition-hint">
+                <span class="wallet__condition-icon">
+                    <img src="img/warning2.svg" alt="">
+                </span>
+                <span>Conditions for mint:</span>
+            </div>
+            <ol class="wallet__condition-list">
+                <li>1.You can mint only on one wallet.</li>
+                <li>2.you must also be in the allowed list.</li>
+                <li>3.have $SANI or $TAIL on your wallet.</li>
+            </ol>
+        </div>
+        <div class="wallet__bottom">
+            <div class="wallet__buttons">
+                <button class="wallet__btn2 m-btn">buy $tail</button>
+                <button class="wallet__btn3 m-btn">buy $sani</button>
+            </div>
+            <a href="" class="wallet__hint">
+                <span class="wallet__hint-icon">
+                    <img src="img/warning2.svg" alt="">
+                </span>
+                <span>mint rules</span>
+            </a>
+        </div>
+    </div>
+</div>
