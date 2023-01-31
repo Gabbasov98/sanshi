@@ -6,11 +6,20 @@
   z-index: 3;
   padding: 40px 0;
   &__logo{
-    display: block;
-    width: 280px;
-    img{
-      width: 100%;
+    display: flex;
+    align-items: center;
+    &-img1{
+      width: 199px;
       display: block;
+      margin-right: 9px;
+    }
+    &-img2{
+      width: 71px;
+      display: block;
+      img{
+        display: block;
+        width: 100%;
+      }
     }
   }
   &__close{
@@ -28,7 +37,13 @@
       justify-content: space-between;
     }
     &__logo{
-      width: 144px;
+      &-img1{
+        width: 107px;
+        margin-right: 6px;
+      }
+      &-img2{
+        width: 29px;
+      }
     }
     &__close{
       z-index: 5;
